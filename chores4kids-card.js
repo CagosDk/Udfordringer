@@ -10,19 +10,19 @@ const C4K_I18N = {
 		'overview.none_active': 'No active tasks right now.',
 		'overview.none': 'No tasks yet.',
 		'overview.finished_none': 'No finished tasks yet.',
-		'card.admin_title': 'Chores4Kids – Parents',
-		'input.new_child_name': 'New child — name',
+		'card.admin_title': 'Udfordringer – Admin',
+		'input.new_child_name': 'Ny person — navn',
 			'input.new_category_name': 'New category — name',
-		'btn.add_child': 'Add child',
+		'btn.add_child': 'Tilføj person',
 			'btn.add_category': 'Add category',
-		'section.children': 'Children',
+		'section.children': 'Personer',
 			'section.categories': 'Categories',
 		'th.name': 'Name', 'th.color': 'Color', 'th.points': 'Points', 'th.pending': 'Pending', 'th.actions': 'Actions', 'th.status':'Status', 'th.assign':'Assigned to',
 		'th.categories':'Categories', 'th.completed':'Completed',
 		'btn.rename': 'Rename', 'btn.delete': 'Delete',
 		'section.new_task': 'Create Task',
 			'ph.title': 'Title', 'ph.points': 'Points', 'ph.description': 'Description (optional)',
-			'ph.bonus_title': 'Bonus task title', 'ph.bonus_points': 'Bonus points',
+			'ph.bonus_title': 'Bonus task title', 'ph.bonus_description': 'Bonus task description', 'ph.bonus_points': 'Bonus points',
 			'ph.due': 'Deadline (date)',
 			'ph.early_bonus_days': 'Early bonus days',
 			'ph.early_bonus_points': 'Early bonus points',
@@ -32,17 +32,17 @@ const C4K_I18N = {
 			'schedule.weekly': 'Weekly task',
 			'schedule.monthly': 'Monthly task',
 			'ph.categories': 'Categories',
-		'select.assign_child': 'Assign child',
+		'select.assign_child': 'Tildel person',
 			'select.categories': 'Select categories',
 		'ph.icon': 'Icon (mdi:...)',
 		'icon.choose': 'Choose icon', 'icon.clear': 'Clear icon', 'icon.none': 'None', 'icon.search': 'Search icon',
 		'btn.create_task': 'Create task', 'btn.update_task': 'Update task', 'btn.edit': 'Edit', 'editor.loaded_task': 'Editing existing task',
 		'section.unassigned': 'Unassigned tasks', 'btn.assign': 'Assign',
-		'section.tasks_per_child': 'Tasks per child',
+		'section.tasks_per_child': 'Opgaver pr. person',
 		'btn.start': 'Start', 'btn.back': 'Reassign', 'btn.awaiting': 'Awaiting', 'btn.approve': 'Approve', 'btn.approve_bonus': 'Approve bonus', 'btn.approve_all': 'Approve all', 'btn.approve_partial': 'Partial approve', 'lbl.approved': 'Approved',
 		'section.scoreboard': 'Scoreboard',
-		'confirm.delete_child': 'Delete {name}?', 'confirm.delete_task': 'Delete task?',
-		'alert.choose_child_first': 'Choose a child first',
+		'confirm.delete_child': 'Slet {name}?', 'confirm.delete_task': 'Delete task?',
+		'alert.choose_child_first': 'Vælg en person først',
 		'ui.auto_recycle': 'Auto recycle approved tasks',
 		'ui.quick_complete': 'One-tap completion',
 		'ui.skip_approval': 'Skip parent approval',
@@ -68,7 +68,7 @@ const C4K_I18N = {
 		'shop.title':'Point shop','shop.open':'Open shop','shop.item':'Item','shop.price':'Price','shop.icon':'Icon','shop.image':'Image','shop.upload':'Upload image','shop.add_item':'Add item','shop.history':'Purchase history','shop.child':'Child','shop.when':'When','shop.date':'Date','shop.time':'Time','shop.advanced':'Advanced actions','shop.entity':'Entity','shop.operation':'Operation','shop.add_action':'Add action','shop.add_delay':'Add delay','shop.steps':'Steps','shop.seconds':'Seconds','shop.minutes':'Minutes','shop.hours':'Hours','shop.delay':'Delay','shop.active':'Active','shop.buy':'Buy','shop.bought':'Bought','shop.clear_history':'Clear history','confirm.clear_history':'Clear all purchase history?',
 		// Child specific
 		'card.child_title_fallback': 'Chores4Kids – {name}',
-		'msg.child_not_found': 'Child not found. Check the name in card configuration.',
+		'msg.child_not_found': 'Person not found. Check the name in card configuration.',
 		'msg.no_tasks': 'No tasks right now.',
 			'btn.done': 'Done', 'btn.start_task': 'Start task', 'btn.complete_task': 'Complete task', 'btn.task_done': 'Task done', 'btn.complete_bonus': 'Complete bonus',
 			'lbl.awaiting':'Awaiting approval', 'lbl.bonus':'Bonus task', 'lbl.bonus_locked':'Complete main task first',
@@ -79,8 +79,8 @@ const C4K_I18N = {
 			'lbl.deadline': 'Deadline: {date}',
 			'lbl.early_bonus_by': '+{points} bonus points if done on {date} or before',
 			// Editor UI
-			'editor.mode':'Mode', 'editor.mode_admin':'Parents', 'editor.mode_kid':'Kid', 'editor.mode_overview':'Recent tasks',
-			'editor.child_label':'Child', 'editor.child_placeholder':'Child name', 'editor.child_select_prompt':'— Select child —', 'editor.child_hint':'No children found yet — type the name manually.',
+			'editor.mode':'Mode', 'editor.mode_admin':'Admin', 'editor.mode_kid':'Person', 'editor.mode_overview':'Recent tasks',
+			'editor.child_label':'Person', 'editor.child_placeholder':'Personens navn', 'editor.child_select_prompt':'— Vælg person —', 'editor.child_hint':'Ingen personer fundet endnu — skriv navnet manuelt.',
 			'editor.developer_mode':'Developer Mode',
 			'editor.developer_mode_help':'Shows debug controls like manual overdue marking',
 			'editor.enable_points':'Points',
@@ -123,19 +123,19 @@ const C4K_I18N = {
 		'overview.none_active': 'Ingen aktive opgaver lige nu.',
 		'overview.none': 'Ingen opgaver endnu.',
 		'overview.finished_none': 'Ingen færdige opgaver endnu.',
-		'card.admin_title': 'Chores4Kids – Forældre',
-		'input.new_child_name': 'Nyt barn – navn',
+		'card.admin_title': 'Udfordringer – Admin',
+		'input.new_child_name': 'Ny person – navn',
 			'input.new_category_name': 'Ny kategori – navn',
-		'btn.add_child': 'Tilføj barn',
+		'btn.add_child': 'Tilføj person',
 			'btn.add_category': 'Tilføj kategori',
-		'section.children': 'Børn',
+		'section.children': 'Personer',
 			'section.categories': 'Kategorier',
 		'th.name': 'Navn', 'th.color': 'Farve', 'th.points': 'Point', 'th.pending': 'Ventende', 'th.actions': 'Handling', 'th.status':'Status', 'th.assign':'Tildelt til',
 			'th.categories':'Kategorier', 'th.completed':'Fuldført',
 		'btn.rename': 'Omdøb', 'btn.delete': 'Slet',
 		'section.new_task': 'Ny opgave',
 			'ph.title': 'Titel', 'ph.points': 'Point', 'ph.description': 'Beskrivelse (valgfri)',
-			'ph.bonus_title': 'Bonusopgave titel', 'ph.bonus_points': 'Bonus point',
+			'ph.bonus_title': 'Bonusopgave titel', 'ph.bonus_description': 'Bonusopgave beskrivelse', 'ph.bonus_points': 'Bonus point',
 			'ph.due': 'Deadline (dato)',
 			'ph.early_bonus_days': 'Bonus dage før',
 			'ph.early_bonus_points': 'Bonus point',
@@ -145,17 +145,17 @@ const C4K_I18N = {
 			'schedule.weekly': 'Ugentlig opgave',
 			'schedule.monthly': 'Månedlig opgave',
 			'ph.categories': 'Kategorier',
-		'select.assign_child': 'Tildel barn',
+		'select.assign_child': 'Tildel person',
 			'select.categories': 'Vælg kategorier',
 		'ph.icon': 'Ikon (mdi:...)',
 		'icon.choose': 'Vælg ikon', 'icon.clear': 'Fjern ikon', 'icon.none': 'Ingen', 'icon.search': 'Søg ikon',
 		'btn.create_task': 'Opret opgave', 'btn.update_task': 'Opdatér opgave', 'btn.edit': 'Redigér', 'editor.loaded_task': 'Redigerer eksisterende opgave',
 		'section.unassigned': 'Utildelte opgaver', 'btn.assign': 'Tildel',
-		'section.tasks_per_child': 'Opgaver pr. barn',
+		'section.tasks_per_child': 'Opgaver pr. person',
 		'btn.start': 'Start', 'btn.back': 'Gentildel', 'btn.awaiting': 'Afventer', 'btn.approve': 'Godkend', 'btn.approve_bonus': 'Godkend bonus', 'btn.approve_all': 'Godkend alle', 'btn.approve_partial': 'Delvis godkend', 'lbl.approved': 'Godkendt',
 		'section.scoreboard': 'Scoreboard',
 		'confirm.delete_child': 'Slet {name}?', 'confirm.delete_task': 'Slet opgave?',
-		'alert.choose_child_first': 'Vælg et barn først',
+		'alert.choose_child_first': 'Vælg en person først',
 		'ui.auto_recycle': 'Genopret automatisk efter godkendelse',
 		'ui.quick_complete': 'Ét-tryk færdig',
 		'ui.skip_approval': 'Spring forældre godkendelse over',
@@ -178,8 +178,8 @@ const C4K_I18N = {
 		'status.assigned':'Tildelt','status.in_progress':'I gang','status.awaiting_approval':'Afventer godkendelse','status.approved':'Godkendt','status.rejected':'Afvist','status.unassigned':'Ikke tildelt','status.taken':'Taget',
 		'status.overdue':'Forfalden','overdue.reassign_prompt':'Denne opgave er også planlagt i dag. Tildel den igen?','overdue.yes':'Ja, tildel igen','overdue.no':'Nej tak',
 		'debug.mark_overdue':'[TEST] Markér forfalden',
-		'shop.title':'Pointshop','shop.open':'Åbn shop','shop.item':'Vare','shop.price':'Pris','shop.icon':'Ikon','shop.image':'Billede','shop.upload':'Upload billede','shop.add_item':'Tilføj vare','shop.history':'Købshistorik','shop.child':'Barn','shop.when':'Tidspunkt','shop.date':'Dato','shop.time':'Tidspunkt','shop.advanced':'Avancerede handlinger','shop.entity':'Enhed','shop.operation':'Handling','shop.add_action':'Tilføj handling','shop.add_delay':'Tilføj delay','shop.steps':'Trin','shop.seconds':'Sekunder','shop.minutes':'Minutter','shop.hours':'Timer','shop.delay':'Forsinkelse','shop.active':'Aktiv','shop.buy':'Køb','shop.bought':'Købt','shop.clear_history':'Ryd historik','confirm.clear_history':'Ryd hele købshistorikken?',
-			'card.child_title_fallback': 'Chores4Kids – {name}', 'msg.child_not_found': 'Barn ikke fundet. Tjek navn i kort-konfigurationen.', 'msg.no_tasks':'Ingen opgaver lige nu.', 'btn.done':'Fuldført', 'btn.start_task':'Start opgave', 'btn.complete_task':'Opgave klaret', 'btn.task_done':'Opgave færdig', 'btn.complete_bonus':'Færdiggør bonus', 'lbl.awaiting':'Afventer godkendelse', 'lbl.bonus':'Bonusopgave', 'lbl.bonus_locked':'Afslut hovedopgaven først', 'lbl.taken_by':'Opgave taget af {name}', 'lbl.points': 'point',
+		'shop.title':'Pointshop','shop.open':'Åbn shop','shop.item':'Vare','shop.price':'Pris','shop.icon':'Ikon','shop.image':'Billede','shop.upload':'Upload billede','shop.add_item':'Tilføj vare','shop.history':'Købshistorik','shop.child':'Person','shop.when':'Tidspunkt','shop.date':'Dato','shop.time':'Tidspunkt','shop.advanced':'Avancerede handlinger','shop.entity':'Enhed','shop.operation':'Handling','shop.add_action':'Tilføj handling','shop.add_delay':'Tilføj delay','shop.steps':'Trin','shop.seconds':'Sekunder','shop.minutes':'Minutter','shop.hours':'Timer','shop.delay':'Forsinkelse','shop.active':'Aktiv','shop.buy':'Køb','shop.bought':'Købt','shop.clear_history':'Ryd historik','confirm.clear_history':'Ryd hele købshistorikken?',
+			'card.child_title_fallback': 'Chores4Kids – {name}', 'msg.child_not_found': 'Person ikke fundet. Tjek navn i kort-konfigurationen.', 'msg.no_tasks':'Ingen opgaver lige nu.', 'btn.done':'Fuldført', 'btn.start_task':'Start opgave', 'btn.complete_task':'Opgave klaret', 'btn.task_done':'Opgave færdig', 'btn.complete_bonus':'Færdiggør bonus', 'lbl.awaiting':'Afventer godkendelse', 'lbl.bonus':'Bonusopgave', 'lbl.bonus_locked':'Afslut hovedopgaven først', 'lbl.taken_by':'Opgave taget af {name}', 'lbl.points': 'point',
 			'section.daily_tasks': 'Dagens opgaver',
 			'section.weekly_tasks': 'Ugens opgaver',
 			'lbl.deadline': 'Deadline: {date}',
@@ -187,7 +187,7 @@ const C4K_I18N = {
 			,
 			// Editor UI
 			'editor.mode':'Tilstand','editor.mode_admin':'Forældre','editor.mode_kid':'Barn','editor.mode_overview':'Seneste opgaver',
-			'editor.child_label':'Barn','editor.child_placeholder':'Navn på barn','editor.child_select_prompt':'— Vælg barn —','editor.child_hint':'Ingen børn fundet endnu – skriv navnet manuelt.',
+			'editor.child_label':'Person','editor.child_placeholder':'Navn på person','editor.child_select_prompt':'— Vælg person —','editor.child_hint':'Ingen personer fundet endnu – skriv navnet manuelt.',
 			'editor.developer_mode':'Developer Mode',
 			'editor.developer_mode_help':'Viser debug-kontroller som manuel forfaldsmarkering',
 			'editor.enable_points':'Point',
@@ -248,7 +248,7 @@ const C4K_I18N = {
 			'btn.add_points':'Lägg till poäng','btn.reset_points':'Återställ poäng', 'points.title':'Lägg till poäng till {name}','points.quick':'Snabbtillägg','points.remove':'Snabb borttagning','points.custom':'Anpassat antal',
 			'err.title_required':'Titel krävs','err.points_required':'Poäng krävs','err.points_number':'Poäng måste vara ett tal','err.points_positive':'Poängen måste vara 0 eller mer',
 			'status.assigned':'Tilldelad','status.in_progress':'Pågår','status.awaiting_approval':'Väntar på godkännande','status.approved':'Godkänd','status.rejected':'Avvisad','status.unassigned':'Ej tilldelad','status.taken':'Tagen',
-			'shop.title':'Shop','shop.open':'Öppna shop','shop.item':'Vara','shop.price':'Pris','shop.icon':'Ikon','shop.image':'Bild','shop.upload':'Ladda upp bild','shop.add_item':'Lägg till vara','shop.history':'Köphistorik','shop.child':'Barn','shop.when':'Tidpunkt','shop.date':'Datum','shop.time':'Tid','shop.active':'Aktiv','shop.buy':'Köp','shop.bought':'Köpt','shop.clear_history':'Rensa historik','confirm.clear_history':'Rensa all köphistorik?',
+			'shop.title':'Shop','shop.open':'Öppna shop','shop.item':'Vara','shop.price':'Pris','shop.icon':'Ikon','shop.image':'Bild','shop.upload':'Ladda upp bild','shop.add_item':'Lägg till vara','shop.history':'Köphistorik','shop.child':'Person','shop.when':'Tidpunkt','shop.date':'Datum','shop.time':'Tid','shop.active':'Aktiv','shop.buy':'Köp','shop.bought':'Köpt','shop.clear_history':'Rensa historik','confirm.clear_history':'Rensa all köphistorik?',
 			'shop.advanced':'Avancerade åtgärder','shop.entity':'Enhet','shop.operation':'Åtgärd','shop.add_action':'Lägg till åtgärd','shop.add_delay':'Lägg till fördröjning','shop.steps':'Steg','shop.seconds':'Sekunder','shop.minutes':'Minuter','shop.hours':'Timmar','shop.delay':'Fördröjning',
 			'sort.configure':'Sortering','sort.title':'Välj ordning','sort.categories_order':'Ordning för kategorier','sort.none':'Ingen kategori','sort.save':'Spara','sort.reset':'Återställ',
 			'card.child_title_fallback':'Chores4Kids – {name}','msg.child_not_found':'Barn hittades inte. Kontrollera namnet i kortets konfiguration.','msg.no_tasks':'Inga uppgifter just nu.', 'btn.done':'Klar','btn.start_task':'Starta uppgift','btn.complete_task':'Uppgift klar','btn.task_done':'Uppgift klar','btn.complete_bonus':'Slutför bonus','lbl.awaiting':'Väntar på godkännande','lbl.bonus':'Bonusuppgift','lbl.bonus_locked':'Slutför huvuduppgiften först','lbl.taken_by':'Uppgiften är tagen av {name}','lbl.points':'poäng',
@@ -258,7 +258,7 @@ const C4K_I18N = {
 			'lbl.early_bonus_by':'+{points} bonuspoäng om klart {date} eller tidigare',
 			// Editor UI
 			'editor.mode':'Läge','editor.mode_admin':'Förälder','editor.mode_kid':'Barn','editor.mode_overview':'Senaste uppgifter',
-			'editor.child_label':'Barn','editor.child_placeholder':'Barnets namn','editor.child_select_prompt':'— Välj barn —','editor.child_hint':'Inga barn hittades ännu – skriv namnet manuellt.',
+			'editor.child_label':'Person','editor.child_placeholder':'Barnets namn','editor.child_select_prompt':'— Välj barn —','editor.child_hint':'Inga barn hittades ännu – skriv namnet manuellt.',
 			'editor.developer_mode':'Utvecklarläge',
 			'editor.developer_mode_help':'Visar debug-kontroller som manuell förseningsmarkering',
 			'editor.completion_sound':'Klar-ljud',
@@ -312,7 +312,7 @@ const C4K_I18N = {
 			'btn.add_points':'Legg til poeng','btn.reset_points':'Nullstill poeng', 'points.title':'Legg til poeng til {name}','points.quick':'Hurtig legg til','points.remove':'Hurtig trekk fra','points.custom':'Valgfritt antall',
 			'err.title_required':'Tittel er påkrevd','err.points_required':'Poeng må fylles ut','err.points_number':'Poeng må være et tall','err.points_positive':'Poeng må være 0 eller mer',
 			'status.assigned':'Tildelt','status.in_progress':'Pågår','status.awaiting_approval':'Avventer godkjenning','status.approved':'Godkjent','status.rejected':'Avvist','status.unassigned':'Ikke tildelt','status.taken':'Tatt',
-			'shop.title':'Butikk','shop.open':'Åpne butikk','shop.item':'Vare','shop.price':'Pris','shop.icon':'Ikon','shop.image':'Bilde','shop.upload':'Last opp bilde','shop.add_item':'Legg til vare','shop.history':'Kjøpshistorikk','shop.child':'Barn','shop.when':'Tidspunkt','shop.date':'Dato','shop.time':'Tidspunkt','shop.active':'Aktiv','shop.buy':'Kjøp','shop.bought':'Kjøpt','shop.clear_history':'Rydd historikk','confirm.clear_history':'Rydd hele kjøpshistorikken?',
+			'shop.title':'Butikk','shop.open':'Åpne butikk','shop.item':'Vare','shop.price':'Pris','shop.icon':'Ikon','shop.image':'Bilde','shop.upload':'Last opp bilde','shop.add_item':'Legg til vare','shop.history':'Kjøpshistorikk','shop.child':'Person','shop.when':'Tidspunkt','shop.date':'Dato','shop.time':'Tidspunkt','shop.active':'Aktiv','shop.buy':'Kjøp','shop.bought':'Kjøpt','shop.clear_history':'Rydd historikk','confirm.clear_history':'Rydd hele kjøpshistorikken?',
 			'shop.advanced':'Avanserte handlinger','shop.entity':'Enhet','shop.operation':'Handling','shop.add_action':'Legg til handling','shop.add_delay':'Legg til forsinkelse','shop.steps':'Steg','shop.seconds':'Sekunder','shop.minutes':'Minutter','shop.hours':'Timer','shop.delay':'Forsinkelse',
 			'sort.configure':'Sortering','sort.title':'Velg rekkefølge','sort.categories_order':'Rekkefølge for kategorier','sort.none':'Ingen kategori','sort.save':'Lagre','sort.reset':'Nullstill',
 			'card.child_title_fallback':'Chores4Kids – {name}','msg.child_not_found':'Barn ikke funnet. Sjekk navnet i kortkonfigurasjonen.','msg.no_tasks':'Ingen oppgaver nå.', 'btn.done':'Ferdig','btn.start_task':'Start oppgave','btn.complete_task':'Oppgave klar','btn.task_done':'Oppgave ferdig','btn.complete_bonus':'Fullfør bonus','lbl.awaiting':'Venter på godkjenning','lbl.bonus':'Bonusoppgave','lbl.bonus_locked':'Fullfør hovedoppgaven først','lbl.taken_by':'Oppgave tatt av {name}','lbl.points':'poeng',
@@ -322,7 +322,7 @@ const C4K_I18N = {
 			'lbl.early_bonus_by':'+{points} bonuspoeng hvis gjort {date} eller før',
 			// Editor UI
 			'editor.mode':'Modus','editor.mode_admin':'Forelder','editor.mode_kid':'Barn','editor.mode_overview':'Siste oppgaver',
-			'editor.child_label':'Barn','editor.child_placeholder':'Barnets navn','editor.child_select_prompt':'— Velg barn —','editor.child_hint':'Ingen barn funnet ennå – skriv inn navnet manuelt.',
+			'editor.child_label':'Person','editor.child_placeholder':'Barnets navn','editor.child_select_prompt':'— Velg barn —','editor.child_hint':'Ingen barn funnet ennå – skriv inn navnet manuelt.',
 			'editor.developer_mode':'Utviklermodus',
 			'editor.developer_mode_help':'Viser debug-kontroller som manuell forfallsmarkering',
 			'editor.completion_sound':'Fullføringslyd',
@@ -513,7 +513,7 @@ const C4K_I18N = {
 			'lbl.deadline':'Date limite : {date}',
 			'lbl.early_bonus_by':'+{points} points de bonus si terminé le {date} ou avant',
 			// Editor UI
-			'editor.mode':'Mode','editor.mode_admin':'Parents','editor.mode_kid':'Enfant','editor.mode_overview':'Tâches récentes',
+			'editor.mode':'Mode','editor.mode_admin':'Admin','editor.mode_kid':'Enfant','editor.mode_overview':'Tâches récentes',
 			'editor.child_label':'Enfant','editor.child_placeholder':'Nom de l’enfant','editor.child_select_prompt':'— Sélectionner un enfant —','editor.child_hint':'Aucun enfant trouvé pour l’instant — saisissez le nom manuellement.',
 			'editor.developer_mode':'Mode développeur',
 			'editor.developer_mode_help':'Affiche des contrôles de débogage comme marquer en retard manuellement',
@@ -749,7 +749,7 @@ class Chores4KidsDevCard extends LitElement {
 			// Admin state
 			_name: { state: true }, _taskTitle: { state: true }, _taskPoints: { state: true }, _taskDesc: { state: true }, _taskIcon: { state: true }, _iconModalOpen: { state: true },
 			_taskCategories: { state: true }, _openCategoriesMenu: { state: true }, _newCategoryName: { state: true }, _newCategoryColor: { state: true },
-			_taskBonusEnabled: { state: true }, _taskBonusTitle: { state: true }, _taskBonusPoints: { state: true },
+			_taskBonusEnabled: { state: true }, _taskBonusTitle: { state: true }, _taskBonusDescription: { state: true }, _taskBonusPoints: { state: true },
 			_repeatEnabled: { state: true }, _weeklyEnabled: { state: true }, _monthlyEnabled: { state: true }, _repeatAssign: { state: true }, _persistUntilDone: { state: true }, _markOverdue: { state: true }, _quickComplete: { state: true }, _skipApproval: { state: true }, _fastestWins: { state: true }, _editingTask: { state: true }, _tasksModalOpen: { state: true },
 			_customIconModalOpen: { state: true }, _customIconSearch: { state: true }, _customIconPreview: { state: true }, _customIconLabel: { state: true },
 			_shopModalOpen: { state: true }, _shopTitle: { state: true }, _shopPrice: { state: true }, _shopImage: { state: true }, _editItem: { state: true }, _advItem: { state: true },
@@ -1071,6 +1071,7 @@ class Chores4KidsDevCard extends LitElement {
 		this._openCategoriesMenu = false;
 		this._taskBonusEnabled = false;
 		this._taskBonusTitle = '';
+		this._taskBonusDescription = '';
 		this._taskBonusPoints = '';
 		this._newCategoryName = '';
 		this._newCategoryColor = '';
@@ -1904,6 +1905,9 @@ class Chores4KidsDevCard extends LitElement {
 													<input type="number" min="0" step="1" placeholder="${this._t('ph.bonus_points')}" .value=${this._taskBonusPoints||''} @input=${e=>{ this._taskBonusPoints=e.target.value; this.requestUpdate(); }} />
 												</div>
 											</div>
+											<div class="row" style="margin-top:4px;">
+												<textarea rows="2" placeholder="${this._t('ph.bonus_description')}" .value=${this._taskBonusDescription||''} @input=${e=>{ this._taskBonusDescription=e.target.value; this.requestUpdate(); }}></textarea>
+											</div>
 										</div>
 									` : ''}
 									${(!!this._taskEarlyBonusEnabled || String(this._taskDue||'').trim()) ? html`
@@ -2732,14 +2736,27 @@ class Chores4KidsDevCard extends LitElement {
 	}
 	_renderDescriptionModal() {
 		if (!this._viewingTaskDesc) return '';
+		const task = this._viewingTaskDesc || {};
+		const bonusTitle = String(task?.bonus_title || '').trim();
+		const bonusDescription = String(task?.bonus_description || '').trim();
+		const bonusPoints = Number(task?.bonus_points || 0);
+		const hasBonus = !!task?.bonus_enabled || !!bonusTitle || !!bonusDescription || bonusPoints > 0;
 		return html`
 			<div class="overlay open" @click=${()=>this._closeTaskDescription()}>
-				<div class="modal" style="max-width: 500px;" @click=${e=>e.stopPropagation()}>
+				<div class="modal" style="max-width: 560px;" @click=${e=>e.stopPropagation()}>
 					<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 12px;">
-						<h3 style="margin:0; padding-right: 16px;">${this._viewingTaskDesc.title}</h3>
+						<h3 style="margin:0; padding-right: 16px;">${task.title}</h3>
 						<ha-icon icon="mdi:close" style="cursor:pointer;" @click=${()=>this._closeTaskDescription()}></ha-icon>
 					</div>
-					<div style="white-space: pre-wrap;">${this._viewingTaskDesc.description}</div>
+					<div style="white-space: pre-wrap;">${task.description || ''}</div>
+					${hasBonus ? html`
+						<div style="margin-top:16px; padding-top:12px; border-top:1px solid var(--divider-color);">
+							<div style="font-weight:600; margin-bottom:8px;">${this._t('lbl.bonus')}</div>
+							${bonusTitle ? html`<div style="font-weight:500; margin-bottom:6px;">${bonusTitle}</div>` : ''}
+							${bonusDescription ? html`<div style="white-space: pre-wrap; margin-bottom:${bonusPoints > 0 ? '8px' : '0'};">${bonusDescription}</div>` : ''}
+							${bonusPoints > 0 ? html`<div style="opacity:.8; font-size:.95rem;">+${bonusPoints} ${this._t('lbl.points')}</div>` : ''}
+						</div>
+					` : ''}
 				</div>
 			</div>
 		`;
@@ -2794,6 +2811,7 @@ class Chores4KidsDevCard extends LitElement {
 			const merged = { ...(full||{}), ...t };
 			const description = String(merged?.description||'').trim() || String(full?.description||'').trim() || '';
 			const bonusTitle = String(merged?.bonus_title||'').trim() || String(tpl?.bonus_title||'').trim();
+			const bonusDescription = String(merged?.bonus_description||'').trim() || String(tpl?.bonus_description||'').trim();
 			const bonusPointsRaw = (merged?.bonus_points != null) ? merged.bonus_points : tpl?.bonus_points;
 			const bonusPoints = Number(bonusPointsRaw||0);
 			const bonusEnabled = (merged?.bonus_enabled != null)
@@ -2804,6 +2822,7 @@ class Chores4KidsDevCard extends LitElement {
 				description,
 				bonus_enabled: bonusEnabled,
 				bonus_title: bonusTitle,
+				bonus_description: bonusDescription,
 				bonus_points: bonusPoints,
 			};
 		});
@@ -3041,6 +3060,7 @@ class Chores4KidsDevCard extends LitElement {
 		const _fastest = !!this._fastestWins;
 		const _bonusEnabled = pointsEnabled ? !!this._taskBonusEnabled : false;
 		const _bonusTitle = _bonusEnabled ? String(this._taskBonusTitle||'').trim() : '';
+		const _bonusDescription = _bonusEnabled ? String(this._taskBonusDescription||'').trim() : '';
 		const _bonusPoints = _bonusEnabled ? Number(this._taskBonusPoints||0) : 0;
 		const _autoAssignIds = (scheduleMode ? Array.from(this._repeatAssign||[]) : []);
 		
@@ -3069,6 +3089,7 @@ class Chores4KidsDevCard extends LitElement {
 			early_bonus_days: (bonusOn && this._taskEarlyBonusDays!=='' && this._taskEarlyBonusDays!=null) ? Number(this._taskEarlyBonusDays) : undefined,
 			early_bonus_points: (bonusOn && this._taskEarlyBonusPoints!=='' && this._taskEarlyBonusPoints!=null) ? Number(this._taskEarlyBonusPoints) : undefined,
 			bonus_enabled: _bonusEnabled,
+			bonus_description: _bonusDescription,
 			icon:this._taskIcon||undefined,
 			quick_complete: _quick,
 			skip_approval: _skip,
@@ -3111,6 +3132,7 @@ class Chores4KidsDevCard extends LitElement {
 		this._taskEarlyBonusEnabled=false;
 		this._taskBonusEnabled=false;
 		this._taskBonusTitle='';
+		this._taskBonusDescription='';
 		this._taskBonusPoints='';
 		this._repeatDays=new Set();
 		this._repeatAssign=new Set();
@@ -3343,7 +3365,7 @@ class Chores4KidsDevCard extends LitElement {
 			}
 		}catch{}
 	}
-	_editTask(t){ this._editingTask=t; this._taskTitle=t.title; this._taskPoints=t.points; this._taskDesc=t.description||''; this._taskIcon=t.icon||''; this._taskDue = (()=>{ const d=this._parseDueToDate(t?.due); return d? this._formatDateISO(d) : ''; })(); this._taskEarlyBonusDays = (t?.early_bonus_days!=null && Number(t.early_bonus_days)>0)? String(t.early_bonus_days) : ''; this._taskEarlyBonusPoints = (t?.early_bonus_points!=null && Number(t.early_bonus_points)>0)? String(t.early_bonus_points) : ''; this._taskEarlyBonusEnabled = (()=>{ const v=t?.early_bonus_enabled; if (v===true) return true; if (v===false) return false; return (Number(t?.early_bonus_days||0)>0 && Number(t?.early_bonus_points||0)>0); })(); this._taskBonusTitle = String(t?.bonus_title||''); this._taskBonusPoints = (t?.bonus_points!=null && Number(t.bonus_points)>0)? String(t.bonus_points) : ''; this._taskBonusEnabled = !!(String(t?.bonus_title||'').trim() || Number(t?.bonus_points||0)>0); const mode = String(t?.schedule_mode||'').toLowerCase(); this._weeklyEnabled = (mode==='weekly'); this._monthlyEnabled = (mode==='monthly'); const map=["mon","tue","wed","thu","fri","sat","sun"]; const fromAttr=Array.isArray(t.repeat_days)? t.repeat_days.map(d=> typeof d==='number'? map[d] : String(d).slice(0,3)) : []; this._repeatDays=new Set(fromAttr); const kids = Array.isArray(t.repeat_child_ids)? t.repeat_child_ids : (t.repeat_child_id? [t.repeat_child_id]:[]); this._repeatAssign=new Set(kids); this._repeatEnabled = (!this._weeklyEnabled && !this._monthlyEnabled) && !!(fromAttr.length || kids.length || mode==='repeat'); this._persistUntilDone = !!t.persist_until_completed; this._markOverdue = t.mark_overdue !== false; this._quickComplete = !!t.quick_complete; this._skipApproval = !!t.skip_approval; this._fastestWins = !!t.fastest_wins; const cats = Array.isArray(t.categories)? t.categories : []; this._taskCategories = new Set(cats); if (this._weeklyEnabled || this._monthlyEnabled){ this._persistUntilDone = false; this._markOverdue = true; } }
+	_editTask(t){ this._editingTask=t; this._taskTitle=t.title; this._taskPoints=t.points; this._taskDesc=t.description||''; this._taskIcon=t.icon||''; this._taskDue = (()=>{ const d=this._parseDueToDate(t?.due); return d? this._formatDateISO(d) : ''; })(); this._taskEarlyBonusDays = (t?.early_bonus_days!=null && Number(t.early_bonus_days)>0)? String(t.early_bonus_days) : ''; this._taskEarlyBonusPoints = (t?.early_bonus_points!=null && Number(t.early_bonus_points)>0)? String(t.early_bonus_points) : ''; this._taskEarlyBonusEnabled = (()=>{ const v=t?.early_bonus_enabled; if (v===true) return true; if (v===false) return false; return (Number(t?.early_bonus_days||0)>0 && Number(t?.early_bonus_points||0)>0); })(); this._taskBonusTitle = String(t?.bonus_title||''); this._taskBonusDescription = String(t?.bonus_description||''); this._taskBonusPoints = (t?.bonus_points!=null && Number(t.bonus_points)>0)? String(t.bonus_points) : ''; this._taskBonusEnabled = !!(String(t?.bonus_title||'').trim() || String(t?.bonus_description||'').trim() || Number(t?.bonus_points||0)>0); const mode = String(t?.schedule_mode||'').toLowerCase(); this._weeklyEnabled = (mode==='weekly'); this._monthlyEnabled = (mode==='monthly'); const map=["mon","tue","wed","thu","fri","sat","sun"]; const fromAttr=Array.isArray(t.repeat_days)? t.repeat_days.map(d=> typeof d==='number'? map[d] : String(d).slice(0,3)) : []; this._repeatDays=new Set(fromAttr); const kids = Array.isArray(t.repeat_child_ids)? t.repeat_child_ids : (t.repeat_child_id? [t.repeat_child_id]:[]); this._repeatAssign=new Set(kids); this._repeatEnabled = (!this._weeklyEnabled && !this._monthlyEnabled) && !!(fromAttr.length || kids.length || mode==='repeat'); this._persistUntilDone = !!t.persist_until_completed; this._markOverdue = t.mark_overdue !== false; this._quickComplete = !!t.quick_complete; this._skipApproval = !!t.skip_approval; this._fastestWins = !!t.fastest_wins; const cats = Array.isArray(t.categories)? t.categories : []; this._taskCategories = new Set(cats); if (this._weeklyEnabled || this._monthlyEnabled){ this._persistUntilDone = false; this._markOverdue = true; } }
 	async _saveEditedTask(){
 		if(!this._editingTask) return;
 		// validate like create
@@ -3366,6 +3388,7 @@ class Chores4KidsDevCard extends LitElement {
 				early_bonus_points: (bonusOn && this._taskEarlyBonusPoints!=='' && this._taskEarlyBonusPoints!=null) ? Number(this._taskEarlyBonusPoints) : undefined,
 				bonus_enabled: (pointsEnabled && this._taskBonusEnabled),
 				bonus_title: (pointsEnabled && this._taskBonusEnabled) ? String(this._taskBonusTitle||'').trim() : '',
+				bonus_description: (pointsEnabled && this._taskBonusEnabled) ? String(this._taskBonusDescription||'').trim() : '',
 				bonus_points: (pointsEnabled && this._taskBonusEnabled) ? Number(this._taskBonusPoints||0) : 0,
 				icon: this._taskIcon||'',
 				persist_until_completed: (scheduleMode==='weekly' || scheduleMode==='monthly') ? false : !!this._persistUntilDone,
@@ -3432,6 +3455,7 @@ class Chores4KidsDevCard extends LitElement {
 			this._taskEarlyBonusEnabled=false;
 			this._taskBonusEnabled=false;
 			this._taskBonusTitle='';
+			this._taskBonusDescription='';
 			this._taskBonusPoints='';
 			this._repeatDays=new Set(); this._repeatAssign=new Set();
 			this._repeatEnabled=false;
