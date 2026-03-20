@@ -1,0 +1,6 @@
+DOMAIN = "udfordringer"
+PLATFORMS = ["sensor"]
+STORAGE_KEY = DOMAIN
+STORAGE_VERSION = 1
+SIGNAL_CHILDREN_UPDATED = f"{DOMAIN}_children_updated"
+SIGNAL_DATA_UPDATED = f"{DOMAIN}_data_updated"

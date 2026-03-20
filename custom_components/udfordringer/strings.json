@@ -1,0 +1,10 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Opret Udfordringer",
+        "description": "Tryk Indsend for at oprette integrationen."
+      }
+    }
+  }
+}
