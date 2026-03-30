@@ -1,6 +1,4 @@
 {
   "name": "Udfordringer",
-  "render_readme": true,
-  "zip_release": true,
-  "filename": "udfordringer.zip"
+  "render_readme": true
 }
