@@ -2,12 +2,12 @@
   "domain": "udfordringer",
   "name": "Udfordringer",
   "after_dependencies": ["lovelace"],
-  "codeowners": ["@qlerup"],
+  "codeowners": ["@CagosDk"],
   "config_flow": true,
   "dependencies": ["http", "frontend"],
   "documentation": "https://github.com/YOUR_GITHUB/udfordringer",
   "iot_class": "local_push",
   "issue_tracker": "https://github.com/YOUR_GITHUB/udfordringer/issues",
   "requirements": [],
-  "version": "1.0.3"
+  "version": "0.0.1"
 }
